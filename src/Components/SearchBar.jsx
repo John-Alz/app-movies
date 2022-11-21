@@ -52,7 +52,7 @@ export default function SearchBar() {
         focus:text-white  focus:outline-none
         placeholder-white"
         autocomplete="off"
-        placeholder="¿Que quieres ver?"
+        placeholder="¿Que quieres ver? "
     />
     
   </div>
