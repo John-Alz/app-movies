@@ -46,7 +46,7 @@ function Detalle() {
                             
                         <h2 className="pt-20 pl-20  text-white text-5xl font-bold">{ movie.title }</h2>
                         <div className="flex  pl-20 ">
-                        <span class="inline-block  text-sm font-semibold text-white border-r-2 border-violet-800 pr-2 mb-2 mt-4">{movie.release_date}</span>
+                        <span className="inline-block  text-sm font-semibold text-white border-r-2 border-violet-800 pr-2 mb-2 mt-4">{movie.release_date}</span>
                         <ul >
                             { movie.genres.map(oneGenre => <li className="inline-block rounded-full text-sm font-semibold pl-2 text-white mr-2 mb-2 mt-4" key={oneGenre.id}>{oneGenre.name}</li>)}
                         </ul>

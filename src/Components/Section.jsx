@@ -14,7 +14,7 @@ export default function Section() {
             <div className='ml-96 '>
             <div className='ml-64 '>
               <img src={mike} alt="mike" />
-            </div>
+            </div> 
             </div>
     </div>
     </div>

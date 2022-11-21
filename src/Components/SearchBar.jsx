@@ -28,8 +28,8 @@ export default function SearchBar() {
     }
 
   return (
-    <form class="flex justify-center" onSubmit={handleSubmit}>
-    <div class="flex mb-3 xl:w-3/5 ">
+    <form className="flex justify-center" onSubmit={handleSubmit}>
+    <div className="flex mb-3 xl:w-3/5 ">
     <input
         // onChange={(e) => handleChange(e.target.value)}
         type="text"

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer class="p-4 bg-purple-600  shadow md:px-6 md:py-8">
+    <footer className="p-4 bg-purple-600  shadow md:px-6 md:py-8">
     <div class="flex justify-center">
         <h1 className='text-white text-6xl font-semibold '>¿Que ofertamos <br /> actualmente?</h1>
     </div>
@@ -24,8 +24,8 @@ export default function Footer() {
         <p className='text-xl font-bold text-white'>buena <br /> organizacion  </p>
     </div>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-autolg:my-8" />
-    <span class="block text-sm text-white sm:text-center ">© 2022 <a href="https://flowbite.com/" class="hover:underline">BiteTV™</a>. Todos los derechos reservados.
+    <hr className="my-6 border-gray-200 sm:mx-autolg:my-8" />
+    <span className="block text-sm text-white sm:text-center ">© 2022 <a href="https://flowbite.com/" class="hover:underline">BiteTV™</a>. Todos los derechos reservados.
     </span>
 </footer>
   )

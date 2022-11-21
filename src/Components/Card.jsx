@@ -53,16 +53,16 @@ export default function Card({movie, addOrRemoveFovorite}) {
 
   return (
     <div>
-        <div class="pl-2 pr-2 ">
+        <div className="pl-2 pr-2 ">
     <Link to={`/detail/${id}`}>
-  <img class=" h-72" src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : imgURL } alt="movie"/>
+  <img className=" h-72" src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : imgURL } alt="movie"/>
   </Link>
-  <div class="">
-    <h1 class="font-bold text-xl mb-2">{title.substring(0, 16)}...</h1>
+  <div className="">
+    <h1 className="font-bold text-xl mb-2">{title.substring(0, 16)}...</h1>
   </div>
-  <div class="flex">
-    <span class="inline-block  rounded-full text-sm font-semibold text-white mr-2 mb-2">{release_date ? release_date : date}</span>
-    <button onClick={addOrRemoveFovorite} data-movie-id={id} class="inline-block   mr-2 mb-2 ml-20"><AiFillHeart size={20} color="white"/></button>
+  <div className="flex">
+    <span className="inline-block  rounded-full text-sm font-semibold text-white mr-2 mb-2">{release_date ? release_date : date}</span>
+    <button onClick={addOrRemoveFovorite} data-movie-id={id} className="inline-block   mr-2 mb-2 ml-20"><AiFillHeart size={20} color="white"/></button>
   </div>
 </div>
 
