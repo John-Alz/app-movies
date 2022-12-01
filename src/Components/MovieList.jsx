@@ -45,7 +45,7 @@ export default function Listado(props) {
       <h1>Peliculas:</h1>
       
     </div>
-      {/* {!token && <Redirect to="/"/>} */}
+      {!token && <Redirect to="/"/>}
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pl-15 pr-16 pl-16 pt-8 pb-10'>
       {
