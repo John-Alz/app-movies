@@ -7,7 +7,7 @@ import { MdOutlineFavorite } from 'react-icons/md';
 import Header from "./Header";
 
 
-function Detalle() {
+function Detalle() { 
  
     let { id } = useParams();
 
