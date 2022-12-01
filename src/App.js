@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Detail from "./Components/Detail";
 import Favorites from "./Components/Favorites";
 import Home from "./Components/Home";
-import Landing from "./Components/Landing";
+// import Landing from "./Components/Landing";
 import NotFound from "./Components/NotFound";
 import Resultados from "./Components/Resultados";
 // import swal from '@sweetalert/with-react'
@@ -71,7 +71,7 @@ function App() {
   return (
     <div className="">
       <Switch>
-        <Route exact path="/" component={Landing} />
+        {/* <Route exact path="/" component={Landing} /> */}
         <Route
           path="/listado"
           render={(props) => (
