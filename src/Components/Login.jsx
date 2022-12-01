@@ -54,7 +54,7 @@ export default function Login() {
             return;
         }
 
-        if (email !== "challenge@alkemy.org" || password !== "react") {
+        if (email !== "bite.tv@bite.com" || password !== "biteTv") {
             // swal("Oops",
             //     "Credenciales inavalidas", "error"
             // ) 
@@ -72,9 +72,18 @@ export default function Login() {
 
 
         
-            const tokenRecibido = "jnjnhsjadjhs";
+            const tokenRecibido = "HS256";
             sessionStorage.setItem('token', tokenRecibido);
             history.push("/listado");
+            Swal.fire({
+              position: 'center',
+              icon: 'success',
+              title: 'estas dentro',
+              showConfirmButton: false,
+              color: '#fff',
+              background: 'rgba(40,40,40,1)',
+              timer: 2000
+            })
     }
 
     let token = sessionStorage.getItem("token")
@@ -161,8 +170,8 @@ export default function Login() {
                   <p className="my-4 text-white text-2xl text-center">
                     {/* Prodcution-ready with SEO-friendly for <br />
                     quickly starting a new project */}
-                    Email: challenge@alkemy.org <br />
-                    Contraseña: react
+                    Email: bite.tv@bite.com<br />
+                    Contraseña: biteTv
                   </p>
                   <div className="grid grid-cols-4 gap-4 mt-8 mb-8">
                     <img className="w-40 " src={react} alt="react" />
