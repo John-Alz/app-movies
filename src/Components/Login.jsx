@@ -71,23 +71,10 @@ export default function Login() {
         }
 
 
-        axios
-        .post("http://challenge-react.alkemy.org", {email, password})
-        .then(res => {
-          Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Estas dentro!!',
-            showConfirmButton: false,
-            color: '#fff',
-            background: 'rgba(40,40,40,1)',
-            timer: 1500
-          })
-            const tokenRecibido = res.data.token;
+        
+            const tokenRecibido = "jnjnhsjadjhs";
             sessionStorage.setItem('token', tokenRecibido);
             history.push("/listado");
-
-        })
     }
 
     let token = sessionStorage.getItem("token")
