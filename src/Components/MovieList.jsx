@@ -13,7 +13,7 @@ export default function Listado(props) {
   console.log(pageNumber);
 
   useEffect(() => {
-    const endPoint = `https://api.themoviedb.org/3/discover/movie?api_key=155ac120887e5a211953b1e9e999319f&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page=${pageNumber}&with_watch_monetization_types=flatrate`;
+    const endPoint = `http://api.themoviedb.org/3/discover/movie?api_key=155ac120887e5a211953b1e9e999319f&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page=${pageNumber}&with_watch_monetization_types=flatrate`;
     axios.get(endPoint)
     .then(response => {
       const apiData = response.data;
