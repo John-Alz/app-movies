@@ -2,7 +2,6 @@ import React from 'react'
 import mike from "../img/mike3.png"
 
 
-
 export default function Section() {
   return (
     <div className=''>

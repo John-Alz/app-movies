@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-import swal from '@sweetalert/with-react'
 import Card from './Card';
 import { Redirect } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -24,8 +23,6 @@ export default function Resultados(props) {
         axios.get(endPoint).then(response => {
                 const moviesArray = response.data.results;
                 if (moviesArray.length === 0) {
-                //     swal("Oops",
-                // "Tu busqueda no arrojo resultados", "warning") 
                 Swal.fire({
                   position: 'center',
                   icon: 'error',
@@ -40,7 +37,15 @@ export default function Resultados(props) {
                 console.log(moviesArray);
             })
             .catch(error => {
-                swal(<h2>No se pudo cargar la API</h2>);
+                Swal.fire({
+                  position: 'center',
+                  icon: 'error',
+                  title: 'No se pudo cargar la API',
+                  showConfirmButton: false,
+                  color: '#fff',
+                  background: 'rgba(40,40,40,1)',
+                  timer: 2000
+                })
             })
     }, [keyword, pageNumber]);
 

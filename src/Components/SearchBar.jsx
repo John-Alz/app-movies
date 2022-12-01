@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsSearch } from 'react-icons/bs';
-import swal from '@sweetalert/with-react'
 import { useHistory } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 
 export default function SearchBar() {
@@ -13,13 +13,25 @@ export default function SearchBar() {
       const keyword = e.currentTarget.keyword.value.trim();
 
       if (keyword.length === 0) {
-        swal("Oops",
-                "Debes escribir una palabra valida", "warning"
-            ) 
+            Swal.fire({
+              position: 'center',
+              icon: 'warning',
+              title: "Debes escribir una palabra valida",
+              showConfirmButton: false,
+              color: '#fff',
+              background: 'rgba(40,40,40,1)',
+              timer: 2500
+            })
       } else if (keyword.length < 4) {
-        swal("Oops",
-                "Debes escribir mas de cuatro caracteres", "warning"
-            ) 
+            Swal.fire({
+              position: 'center',
+              icon: 'warning',
+              title: "Debes escribir mas de cuatro caracteres",
+              showConfirmButton: false,
+              color: '#fff',
+              background: 'rgba(40,40,40,1)',
+              timer: 2500
+            })
       } else {
         e.currentTarget.keyword.value = " "
         history.push(`/resultados?keyword=${keyword}`)

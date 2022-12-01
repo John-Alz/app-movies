@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {Redirect, useParams } from "react-router-dom";
 import axios from "axios";
-import swAlert from '@sweetalert/with-react';
+import Swal from 'sweetalert2'
 import { BsFillPlayFill } from 'react-icons/bs';
 import { MdOutlineFavorite } from 'react-icons/md';
 import Header from "./Header";
@@ -22,7 +22,15 @@ function Detalle() {
                 setMovie(movieData);
             })
             .catch(error => {
-                swAlert(<h2>No se pudo cargar la API</h2>);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'No se pudo cargar la API',
+                    showConfirmButton: false,
+                    color: '#fff',
+                    background: 'rgba(40,40,40,1)',
+                    timer: 2000
+                  })
             })
     }, [id]);
 

@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react'
-// import React, { useEffect } from 'react'
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 import Card from './Card';
-// import { MdOutlineFavorite } from 'react-icons/md';
-// import { BsFillPlayFill } from 'react-icons/bs';
-import swal from '@sweetalert/with-react'
+import Swal from 'sweetalert2'
 import Pagination from './Pagination';
 // import Categories from './Categories';
 
@@ -23,9 +20,15 @@ export default function Listado(props) {
       setMovies(apiData.results);
     })
     .catch(error => {
-      swal("Oops",
-                "Tuvimos problemas con el servidor, intenta mas tarde", "error"
-            ) 
+            Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Tuvimos problemas con el servidor, intenta mas tarde',
+              showConfirmButton: false,
+              color: '#fff',
+              background: 'rgba(40,40,40,1)',
+              timer: 2000
+            })
     })
   }, [setMovies, pageNumber])
 
