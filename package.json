@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sweetalert/with-react": "^0.1.1",
     "@sweetalert2/theme-dark": "^5.0.14",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,7 +14,6 @@
     "react-paginate": "^8.1.4",
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
-    "sweetalert": "^2.1.2",
     "sweetalert2": "^11.6.8",
     "web-vitals": "^2.1.4"
   },
