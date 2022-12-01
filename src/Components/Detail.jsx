@@ -8,7 +8,7 @@ import Header from "./Header";
 
 
 function Detalle() {
-
+ 
     let { id } = useParams();
 
     console.log(id);
