@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import axios from 'axios';
 import { Redirect, useHistory} from 'react-router-dom';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import react from "../img/react.png"
