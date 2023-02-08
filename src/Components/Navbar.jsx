@@ -34,8 +34,8 @@ function Navbar(props) {
             <div className='flex'>
             <ul className='hidden md:flex iytems-center mr-4 pt-5 text-base font-semibold cursor-pointer'>
                 <li className='py-4 px-6 hover:underline text-white'><Link to="/listado">Home</Link></li>
-                <li className='py-4 px-6 hover:underline text-white'><Link to="/listado">Movies</Link></li>
-                <li className='py-4 px-6 hover:underline text-white'><Link to="/favorites">Favorites</Link></li>
+                <li className='py-4 px-6 hover:underline text-white'><Link to="/listado">Peliculas</Link></li>
+                <li className='py-4 px-6 hover:underline text-white'><Link to="/favorites">Favoritas</Link></li>
                
                 {/* <span className='absolute  ml-64  text-purple-500 '>
                 {

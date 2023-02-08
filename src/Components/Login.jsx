@@ -92,7 +92,7 @@ export default function Login() {
     {token && <Redirect to="/listado"/>}
     <div className='   bg-white/10 px-10 py-10  rounded-3xl '>
     <h1 className='text-5xl text-white font-semibold'>Welcome back!</h1>
-    <p className='font-medium text-lg text-white mt-4'>Welcome back! please enter your details.</p>
+    <p className='font-medium text-lg text-white mt-4'>Por favor, introduzca sus credenciales.</p>
     <form
     className='mt-8'
      onSubmit={handleSubmit}>
@@ -100,15 +100,15 @@ export default function Login() {
         <label className='text-lg text-white font-medium'>Email</label>
             <input 
             className='w-full border-2 text-white border-gray-100 roundes-xl p-4 mt-1 bg-transparent focus:outline-none focus:text-white placeholder-white'
-            placeholder='Enter your email'
+            placeholder='Ingrese el correo electrónico valido'
             type="text" 
             name='email' />
         </div>
         <div>
-        <label className='text-lg text-white font-medium'>Password</label>
+        <label className='text-lg text-white font-medium'>Contraseña</label>
             <input 
             className='w-full border-2 text-white border-gray-100 roundes-xl p-4 mt-1 bg-transparent focus:outline-none focus:text-white placeholder-white'
-            placeholder='Enter your password'
+            placeholder='Ingrese la contraseña valida'
             type={showpassword}
             name='password' />
         </div>
@@ -127,10 +127,10 @@ export default function Login() {
                 <label 
                 htmlFor='remember'
                 className='ml-2 text-white font-medium text-base'>
-                    Show password.
+                    Mostrar contraseña.
                 </label>
             </div>
-                <button className='font-medium text-base text-violet-500'>Forgot password.</button>
+                {/* <button className='font-medium text-base text-violet-500'>Contraseña olvidada.</button> */}
         </div>
         <div className='mt-8 flex flex-col gap-y-4'>
         <button className=' active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out bg-violet-500 text-white text-lg font-bold py-3 rounded-xl' type='submit'>Sing in</button>
